@@ -595,6 +595,7 @@ header .bottomNav button i {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
+  max-height: 100%;
 }
 .for-you .row .col-xxl-2 .content .textcontent {
   padding: 16px;
@@ -610,6 +611,10 @@ header .bottomNav button i {
   color: #52057B;
 }
 .for-you .row .col-xxl-2 .content .textcontent h6 {
+  width: 23ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin-top: 13px;
   font-weight: 500;
   font-size: 16px;
