@@ -1,3 +1,4 @@
+document.title = window.location.href
 let product_id = (window.location.hash.split('#')[1])
 fetch(`https://fakestoreapi.com/products/${product_id}`)
 .then(function (response) {
@@ -19,4 +20,5 @@ fetch(`https://fakestoreapi.com/products/${product_id}`)
   </div>`
 
   $('.container .row').append(info_Card);
+  document.title = Card_info.title
 })

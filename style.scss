@@ -295,17 +295,22 @@ header {
         padding: 20px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        img {
-            padding: 30px;
-        }
-        a {
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 18px;
-            color: #212121;
-            text-align: center;
+        align-items: flex-start;
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+                padding: 30px;
+            }
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: #212121;
+                text-align: center;
+            }
         }
     }
     
@@ -325,9 +330,15 @@ header {
         .timer {
             font-weight: 400;
             font-size: 16px;
-            line-height: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             color: #212121;
             .time {
+                text-align: center;
+                min-width: 35px !important;
+                height: 35px !important;
                 margin: 0 12px;
                 padding: 6px;
                 background: #52057B;

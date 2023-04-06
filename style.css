@@ -289,13 +289,18 @@ header .bottomNav button i {
   padding: 20px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
-.choice-category .col-lg-1 img {
+.choice-category .col-lg-1 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.choice-category .col-lg-1 .content img {
   padding: 30px;
 }
-.choice-category .col-lg-1 a {
+.choice-category .col-lg-1 .content a {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -317,10 +322,16 @@ header .bottomNav button i {
 .super-flash-sale .heading .timer {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   color: #212121;
 }
 .super-flash-sale .heading .timer .time {
+  text-align: center;
+  min-width: 35px !important;
+  height: 35px !important;
   margin: 0 12px;
   padding: 6px;
   background: #52057B;

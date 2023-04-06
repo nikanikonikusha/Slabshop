@@ -107,3 +107,19 @@ fetch('https://fakestoreapi.com/products')
     });
 }).then(hrefClick)
 
+// Set the date we're counting down to
+let countDownDate = new Date("Jan 1, 2025 15:23:43").getTime();
+let x = setInterval(function() {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  console.log(hours);
+  $('.hours').text(hours);
+  $('.minutes').text(minutes);
+  $('.seconds').text(seconds);
+  if (distance < 0) {
+    clearInterval(x);
+  }
+}, 1000);
