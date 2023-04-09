@@ -40,6 +40,118 @@ header .topNav .container-fluid {
 header .topNav a {
   color: #212121;
 }
+header .topNav .collapse .navbar-nav .location {
+  position: relative;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .topNav .collapse .navbar-nav .location img {
+  width: 14px;
+  height: 16px;
+}
+header .topNav .collapse .navbar-nav .location button {
+  padding: 3px;
+  width: auto !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+}
+header .topNav .collapse .navbar-nav .location .location-dropdown {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid grey;
+  border-radius: 10px;
+  top: 100%;
+}
+header .topNav .collapse .navbar-nav .location .location-dropdown p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 5px 0px;
+}
+header .topNav .collapse .navbar-nav .location .location-dropdown.show {
+  display: block;
+}
+header .topNav .collapse .navbar-nav .search {
+  margin-left: 30px;
+  width: 250px;
+  padding: 8px 16px;
+  background: #FCFCFC;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+}
+header .topNav .collapse .navbar-nav .search input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  background-color: transparent;
+  border: 0;
+}
+header .topNav .collapse .navbar-nav .search input:focus-visible {
+  outline: 0;
+}
+header .topNav .collapse .navbar-nav .category {
+  position: relative;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+header .topNav .collapse .navbar-nav .category button {
+  padding: 8px 16px;
+  background: #52057B;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+header .topNav .collapse .navbar-nav .category .category-dropdown {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid grey;
+  border-radius: 10px;
+  top: 100%;
+}
+header .topNav .collapse .navbar-nav .category .category-dropdown p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 5px 0px;
+}
+header .topNav .collapse .navbar-nav .category .category-dropdown.show {
+  display: block;
+}
+@media (max-width: 992px) {
+  header .topNav .collapse .navbar-nav .location {
+    margin: 10px 0px;
+  }
+  header .topNav .collapse .navbar-nav .search {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  header .topNav .collapse .navbar-nav .category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+}
 header .bottomNav {
   display: flex;
   justify-content: space-between;
